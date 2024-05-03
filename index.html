@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!--META TAGS-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--TÍTULO-->
+    <title>Calculadora Online</title>
+
+    <!-- FONT ROTOBO -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+
+
+</head>
+<body>
+
+    <!--CALCULADORA-->
+    <div class="calculadora">
+
+        <!--TELA-->
+        <div class="tela">
+            <input id="display" placeholder="0" disabled> <!--Tela onde aparece os cálculos-->
+            
+        </div>
+
+        <!--BOTÕES CALCULADORA-->
+        <div class="rumo">
+            <button class="button text" onclick="limpar()">C</button>
+            <button class="button" onclick="add_operador('()')">()</button> 
+            <button class="button" onclick="add_operador('%')">%</button>  
+            <button class="button" onclick="add_operador('/')">/</button>  
+        </div>
+
+        <div class="rumo">
+            <button class="button text" onclick="add_numero(7)">7</button> 
+            <button class="button text" onclick="add_numero(8)">8</button> 
+            <button class="button text" onclick="add_numero(9)">9</button> 
+            <button class="button text" onclick="add_operador('*')">*</button> 
+        </div>
+
+        <div class="rumo">
+            <button class="button text" onclick="add_numero(4)">4</button> 
+            <button class="button text" onclick="add_numero(5)">5</button> 
+            <button class="button text" onclick="add_numero(6)">6</button> 
+            <button class="button text" onclick="add_operador('-')">-</button> 
+        </div>
+
+        <div class="rumo">
+            <button class="button text" onclick="add_numero(1)">1</button> 
+            <button class="button text" onclick="add_numero(2)">2</button> 
+            <button class="button text" onclick="add_numero(3)">3</button> 
+            <button class="button text" onclick="add_operador('+')">+</button> 
+        </div>
+        
+        <div class="rumo">
+            <button class="button text" onclick="add_numero(0)">0</button>
+            <button class="button text" onclick="add_operador(',')">,</button>
+            <button class="button text" onclick="total()">=</button> 
+        </div>
+        
+    </div>
+
+        <!--BOTÕES CALCULADORA/-->
+    
+    <!--HISTÓRICO CÁLCULOS-->
+    <div id="historico">
+
+    </div>
+
+    <footer>
+        <p>Todos os direitos reservados - 2024</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
