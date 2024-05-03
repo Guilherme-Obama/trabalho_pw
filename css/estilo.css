@@ -3,29 +3,31 @@
 /* TAGS = input, button, body, footer, p */
 
 .calculadora {
+    /* design container calculadora */
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    padding: 15px;
+    width: 180px;
     text-align: center;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
-
-    /* css do conversor de moedas
-    background-color: var(--cor-de-container);
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
-    margin-top: 50px;
-    padding: 20px;
-    text-align: center;
-    width: 700px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 10px; */
+    background-color:  #003C43;
 
 }
 
+.calculadora button {
+    
+}
+
+
+
 body {
     font-family: "Roboto", sans-serif;
-    background: 
+    background: #627254;
+    color: #000;
+
 }
 
 footer {
