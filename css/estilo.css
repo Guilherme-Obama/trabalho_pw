@@ -2,6 +2,36 @@
 /* IDs = display, historico */
 /* TAGS = input, button, body, footer, p */
 
+.calculadora {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
 
+    /* css do conversor de moedas
+    background-color: var(--cor-de-container);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+    margin-top: 50px;
+    padding: 20px;
+    text-align: center;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px; */
 
-.
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background: 
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
