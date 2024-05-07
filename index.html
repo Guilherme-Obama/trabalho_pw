@@ -19,54 +19,58 @@
 
 </head>
 <body>
+    <h1 style="text-align:center">Calculator App</h1>
 
-    <!--CALCULADORA-->
-    <div class="calculadora">
+    <div class="container">
 
-        <!--TELA-->
-        <div class="tela">
-            <input id="display" placeholder="0" disabled> <!--Tela onde aparece os cálculos-->
-            
-        </div>
+        <br>
 
-        <!--BOTÕES CALCULADORA-->
-        <div class="rumo">
-            <button class="button text" onclick="limpar()">C</button>
-            <button class="button" onclick="add_operador('()')">()</button> 
-            <button class="button" onclick="add_operador('%')">%</button>  
-            <button class="button" onclick="add_operador('/')">/</button>  
-        </div>
+        <table>
+            <tr>
+                <td colspan="3"><input type='text' id='result' class ='screen' style="text-align: right;">
+                </td>
+                <td>
+                    <input type='button' value = 'C' onclick="clearScreen()" class="clear"/>
+                </td>
+            </tr>
+        </table>
 
-        <div class="rumo">
-            <button class="button text" onclick="add_numero(7)">7</button> 
-            <button class="button text" onclick="add_numero(8)">8</button> 
-            <button class="button text" onclick="add_numero(9)">9</button> 
-            <button class="button text" onclick="add_operador('*')">*</button> 
-        </div>
+        <div class="keys">
+            <input type="button" value="7" class="button" onClick="display('7')"></input>
 
-        <div class="rumo">
-            <button class="button text" onclick="add_numero(4)">4</button> 
-            <button class="button text" onclick="add_numero(5)">5</button> 
-            <button class="button text" onclick="add_numero(6)">6</button> 
-            <button class="button text" onclick="add_operador('-')">-</button> 
-        </div>
+            <input type="button" value="8" class="button " onClick="display('8')"></input>
 
-        <div class="rumo">
-            <button class="button text" onclick="add_numero(1)">1</button> 
-            <button class="button text" onclick="add_numero(2)">2</button> 
-            <button class="button text" onclick="add_numero(3)">3</button> 
-            <button class="button text" onclick="add_operador('+')">+</button> 
-        </div>
-        
-        <div class="rumo">
-            <button class="button text" onclick="add_numero(0)">0</button>
-            <button class="button text" onclick="add_operador(',')">,</button>
-            <button class="button text" onclick="total()">=</button> 
-        </div>
-        
-    </div>
+            <input type="button" value="9" class="button" onClick="display('9')"></input>
 
-        <!--BOTÕES CALCULADORA/-->
+            <input type="button" value="/" class="operator" onClick="display('/')"></input>
+
+            <input type="button" value="4" class="button" onClick="display('4')"></input>
+
+            <input type="button" value="5" class="button" onClick="display('5')"></input>
+
+            <input type="button" value="6" class="button" onClick="display('6')"></input>
+
+            <input type="button" value="*" class="operator" onClick="display('*')"></input>
+
+            <input type="button" value="1" class="button" onClick="display('1')"></input>
+
+            <input type="button" value="2" class="button" onClick="display('2')"></input>
+
+            <input type="button" value="3" class="button" onClick="display('3')"></input>
+
+            <input type="button" value="-" class="operator" onClick="display('-')"></input>
+
+            <input type="button" value="0" class="button" onClick="display('0')"></input>
+
+            <input type="button" value="." class="button" onClick="display('.')"></input>
+
+            <input type="button" value= "=" class="button equal-sign" onClick="solve()"></input>
+
+            <input type="button" value="+" class="operator" onClick="display('+')"></input>
+    </div> 
+</div>
+
+</body>
     
     <!--HISTÓRICO CÁLCULOS-->
     <div id="historico">
