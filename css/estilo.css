@@ -1,7 +1,23 @@
+/* Estilo Tags */
 body {
     background-color: #fff;
+    font-family: "Roboto", sans-serif;
 }
 
+h1 {
+    text-align: center;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+/*     background-color: #D7E8B0;*/
+}
+
+/* Estilo Classes */
 .container {
     background-color: #5E1675;
     border: 1px solid #5E1675;
@@ -91,11 +107,7 @@ body {
     
 }
 
-footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    text-align: center;
-/*     background-color: #D7E8B0;*/
+/* Estilo ID */
+#resultado {
+    text-align: right;
 }

@@ -1,6 +1,10 @@
+document.getElementById("resultado").focus()
+
+//verificar letras e operadores regex=[-+*\/]|\d+(\.\d+)?\.? regex.test(string)
 // Mostra os números e operadores clicados pelo usuário na tela
 function display(valor){
     document.getElementById('resultado').value += valor;
+    document.getElementById("resultado").focus();
     return valor;
 }
 
@@ -16,6 +20,8 @@ function solucao(){
         expressao: expressao,
         solucao: resultado};
     salvarHistorico(objetoResultado);
+    
+    document.getElementById("resultado").focus();
 
     return resultado;
 }
@@ -23,6 +29,7 @@ function solucao(){
 // Limpa a tela 
 function limparTela(){
     document.getElementById('resultado').value = '';
+    document.getElementById("resultado").focus();
 }
 
 // Recupera o resultado da solucao()
