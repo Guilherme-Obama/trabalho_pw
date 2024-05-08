@@ -20,25 +20,25 @@
 </head>
 <body>
     <h1>Calculadora Online</h1>
-
     <div class="container">
         <br>
 
-        <!-- TELA CALCULADORA -->
         <table>
             <tr>
+                <!-- TELA CALCULADORA -->
                 <td colspan="3">
                     <input type='text' id='resultado' class ='tela'>
                 </td>
+                <!-- BOTÃO LIMPAR -->
                 <td>
                     <input type='button' value = 'C' onclick="limparTela()" class="limpar"/>
                 </td>
             </tr>
         </table>
 
-        <!-- BOTÕES CALCULADORA -->
+        <!-- BOTÕES NÚMEROS E OPERADORES -->
         <div class="teclas">
-            <input type="button" value="7" class="botao" onClick="display('7')"></input>
+            <input type="button" value="7" class="botao" id="botao7" onClick="display('7')"></input>
 
            <input type="button" value="8" class="botao" onClick="display('8')"></input>
 
@@ -75,13 +75,15 @@
 
     <!-- HISTÓRICO CÁLCULOS -->
     <div id="historico">
-        
+
     </div>
 
+    <!-- RODAPÉ -->
     <footer>
         <p>Todos os direitos reservados - 2024</p>
     </footer>
 
+    <!-- JAVASCRIPT -->
     <script src="js/script.js"></script>
 </body>
 </html>
