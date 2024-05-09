@@ -68,21 +68,4 @@ function salvarHistorico(resultado) {
     historico = JSON.stringify(historico);
     localStorage.setItem("historico", historico);
 
-}
-function calcular(historico) {
-if (numeros[1] == "") {
-    input.value = input.value + '0';
-    numeros[1] = 0;
-
-  }
-  document.querySelector("#historico").innerHTML = input.value;
-}
-
-
-//historico da calculadora  
-function MostrarResultado(historico) {
-    return{
-        operacao: historico,
-        resultado: eval(historico)
     }
-}
