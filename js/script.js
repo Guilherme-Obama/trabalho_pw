@@ -20,31 +20,45 @@ function filtroInput(event){
 
 campoInput.addEventListener('input', filtroInput); // Executa o filtro de input
 
-// Mostra os números e operadores clicados pelo usuário na tela
+// Mostra os números e operadores clicados pelo usuário na tela da calculadora
 function display(valor){
-    document.getElementById('resultado').value += valor;
+    document.getElementById("resultado").value += valor;
+    document.getElementById("resultado").focus();
     return valor;
 }
 
 // Calcula a expressão inserida pelo usuário e retorna o valor para a tela
 function solucao(){
     let historicoRecuperado = recuperaHistorico();
-
-    let expressao = document.getElementById('resultado').value;
-    let resultado = eval(expressao);
-    document.getElementById('resultado').value = resultado;
+  
+    let expressao = document.getElementById("resultado").value;
+    try {
+        let resultado = eval(expressao);
+        if (resultado == Infinity) {
+            alert("Erro! Divisão por zero!");
+            document.getElementById("resultado").value = '';
+            return;
+        }
+        document.getElementById("resultado").value = resultado.toFixed(2);
+        
+        let objetoResultado = {
+            expressao: expressao,
+            solucao: resultado.toFixed(2)};
+        salvarHistorico(objetoResultado);
+        
+    } catch (error) {
+        document.getElementById("resultado").value = '';
+        alert("Expressão: " + expressao + " inválida!")
+    }
     
-    let objetoResultado = {
-        expressao: expressao,
-        solucao: resultado};
-    salvarHistorico(objetoResultado);
-
+    document.getElementById("resultado").focus();
     return resultado;
 }
 
 // Limpa a tela 
 function limparTela(){
-    document.getElementById('resultado').value = '';
+    document.getElementById("resultado").value = '';
+    document.getElementById("resultado").focus();
 }
 
 // Recupera o resultado da solucao()
