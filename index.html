@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <!-- META TAGS -->
     <meta charset="UTF-8">
@@ -8,75 +9,76 @@
     <!-- TÍTULO -->
     <title>Calculadora Online</title>
 
-    <!-- FONT ROTOBO -->
+    <!-- FONTE ROTOBO -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
 
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="css/estilo.css">
 
 
 </head>
+
 <body>
-    <h1>Calculadora Online</h1>
+    <!-- CABEÇALHO -->
+    <header>
+        <h1>Calculadora Online</h1>
+    </header>
     <div class="container">
         <br>
 
-        <table>
-            <tr>
-                <!-- TELA CALCULADORA -->
-                <td colspan="3">
-                    <input type='text' id='resultado' class ='tela'>
-                </td>
-                <!-- BOTÃO LIMPAR -->
-                <td>
-                    <input type='button' value = 'C' onclick="limparTela()" class="limpar"/>
-                </td>
-            </tr>
-        </table>
+        <!-- TELA CALCULADORA -->
+        <div id="tela-calculadora">
+            <input type='text' class='tela' id='resultado'>
+        </div>
+
+        <!-- BOTÃO LIMPAR -->
+        <div id="botao-limpar">
+            <input type='button' value='C' class="limpar" onclick="limparTela()" />
+        </div>
 
         <!-- BOTÕES NÚMEROS E OPERADORES -->
         <div class="teclas">
             <input type="button" value="7" class="botao" id="botao7" onClick="display('7')"></input>
 
-           <input type="button" value="8" class="botao" onClick="display('8')"></input>
+            <input type="button" value="8" class="botao" onClick="display('8')"></input>
 
-           <input type="button" value="9" class="botao" onClick="display('9')"></input>
+            <input type="button" value="9" class="botao" onClick="display('9')"></input>
 
-           <input type="button" value="/" class="operador" onClick="display('/')"></input>
+            <input type="button" value="/" class="operador" onClick="display('/')"></input>
 
-           <input type="button" value="4" class="botao" onClick="display('4')"></input>
+            <input type="button" value="4" class="botao" onClick="display('4')"></input>
 
-           <input type="button" value="5" class="botao" onClick="display('5')"></input>
+            <input type="button" value="5" class="botao" onClick="display('5')"></input>
 
-           <input type="button" value="6" class="botao" onClick="display('6')"></input>
+            <input type="button" value="6" class="botao" onClick="display('6')"></input>
 
-           <input type="button" value="*" class="operador" onClick="display('*')"></input>
+            <input type="button" value="*" class="operador" onClick="display('*')"></input>
 
-           <input type="button" value="1" class="botao" onClick="display('1')"></input>
+            <input type="button" value="1" class="botao" onClick="display('1')"></input>
 
-           <input type="button" value="2" class="botao" onClick="display('2')"></input>
+            <input type="button" value="2" class="botao" onClick="display('2')"></input>
 
-           <input type="button" value="3" class="botao" onClick="display('3')"></input>
+            <input type="button" value="3" class="botao" onClick="display('3')"></input>
 
-           <input type="button" value="-" class="operador" onClick="display('-')"></input>
+            <input type="button" value="-" class="operador" onClick="display('-')"></input>
 
-           <input type="button" value="0" class="botao" onClick="display('0')"></input>
+            <input type="button" value="0" class="botao" onClick="display('0')"></input>
 
-           <input type="button" value="." class="botao" onClick="display('.')"></input>
+            <input type="button" value="." class="botao" onClick="display('.')"></input>
 
-           <input type="button" value= "=" class="botao simbolo-igual" onClick="solucao()"></input>
+            <input type="button" value="=" class="botao simbolo-igual" onClick="solucao()"></input>
 
-           <input type="button" value="+" class="operador" onClick="display('+')"></input>
-        </div> 
-    
+            <input type="button" value="+" class="operador" onClick="display('+')"></input>
+        </div>
+
+        <!-- HISTÓRICO CÁLCULOS -->
+        <div id="historico" class="historico-screen"></div>
     </div>
 
-    <!-- HISTÓRICO CÁLCULOS -->
-    <div id="historico">
-
-    </div>
 
     <!-- RODAPÉ -->
     <footer>
@@ -86,4 +88,5 @@
     <!-- JAVASCRIPT -->
     <script src="js/script.js"></script>
 </body>
+
 </html>

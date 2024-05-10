@@ -1,145 +1,134 @@
-  /* Estilo Tags */
-  body {
-      background-color: #fff;
-       /* FLEX */
+/* Estilos para elementos de marcação HTML */
+
+body {
+    background-color: #fff; 
     align-items: center;
-    display: flex;
+    display: flex; /* Define o layout como flexível */
     justify-content: center;
-    font-family: "Roboto", sans-serif;
-  }
+    font-family: "Roboto", sans-serif; 
+}
 
-  html, body {
-    height: 100%;
-  }
+h1 {
+    text-align: center;
+}
 
-  h1 {
-      text-align: center;
-      margin-bottom: 25em;
-  }
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
 
+/* Estilos para classes de elementos */
 
-  footer {
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      text-align: center;
-  }
+.container {
+    box-sizing: border-box;
+    background-color: #2b2628; 
+    border: 1px solid #2b2628; 
+    box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.75); 
+    border-radius: 2px; 
+    position: absolute; 
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%); /* Move a caixa para o centro da tela */
+    width: 280px; 
+    height: 430px;
+    float: left; /* Alinha a caixa à esquerda */
+}
 
-  /* Estilo Classes */
-  .container {
-      box-sizing: border-box;
-      background-color: #2b2628;
-      border: 1px solid #2b2628;
-      box-shadow: 10px 10px 30px 0px rgba(0,0,0,0.75);
-      border-radius: 2px;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 280px;
-      height: 430px;
+.tela {
+    background-color: #fff; 
+    justify-content: center; 
+    color: black; 
+    font-size: medium; 
+    height: 3em; 
+    width: 205px; 
+    cursor: default; /* Define o cursor como padrão */
+    padding: 10px 20px; 
+    margin-left: 17.5px; 
+    margin-bottom: 25px;  
+}
 
-  }
+.teclas {
+    display: grid; /* Define a exibição como grid */
+    grid-template-columns: repeat(4, 25%); /* Define o layout das colunas */
+    grid-gap: 2px; /* Define o espaçamento entre as células do grid */
+    padding: 18px; 
+    padding-top: 1px; 
+    margin: 0px;
+    color: #fff;
+    padding-bottom: 4px; 
+}
 
-  .teclas {
-  >>>>>>> main
-      display: grid;
-      grid-template-columns: repeat(4, 25%);
-      grid-gap: 2px;
-      padding: 18px;
-      margin:0px;
-      color: #fff;
-      padding-bottom: 4px;
-  }
+.limpar {
+    background-color: #7e7e81; 
+    color: #ca1313; 
+    width: 18.70em; 
+    height: 40px; 
+    margin-right: 5em;  
+    margin-left: 17px; 
+    margin-bottom: 4px;  
+}
 
-  .botao {
-      height: 60px;
-      padding: 5px;
-      background-color: transparent;
-      border-radius: 0px;
-      border: 2px solid #000000;
-      font-size: 2rem;
-      color: #fff;
-  }
+.limpar:hover {
+    background-color: #4b4c50; 
+}
 
-  .botao:hover {
-      background-color: #4b4c50;
-  /*     background-color: #535C91; */
-  }
+.botao {
+    height: 60px; 
+    padding: 5px; 
+    background-color: transparent; 
+    border-radius: 0px; 
+    border: 2px solid #000000; 
+    font-size: 2rem; 
+    color: #fff; 
+}
 
+.botao:hover {
+    background-color: #4b4c50; 
+}
 
-  .operador {
-      color: #a70606;
-      background-color: #7e7e81;
-  /*     color: #fff;
-      background-color: #9290C3; */
-      font-size: 25px;
-      border-radius: 0px;
-  }
+.operador {
+    color: #a70606; 
+    background-color: #7e7e81; 
+    font-size: 25px;
+    border-radius: 0px; 
+}
 
-  .operador:hover {
-      background-color: #4b4c50;
-  /*     background-color: #535C91; */
-  }
+.operador:hover {
+    background-color: #4b4c50; 
+}
 
-  .limpar {
-      background-color: #7e7e81;
-      background-color: #7e7e81;
-      color: #ca1313;
-      width: 20em;
-      height: 40px;
-      margin-top: 4em;
-      margin-right: 5em;
-  /*     background-color: #9290C3;
-      border-color: #9290C3;
-      color: #fff;
-      width: 80px;
-      height: 45px;  
-      margin-left: 40px;
-      margin-bottom: 10px;
-      border-radius: 30px; */
+.simbolo-igual {
+    background-color: #bc162a; 
+    border: 1px solid #000000; 
+    height: 80px; 
+    color: #fff; 
+}
 
-  }
+.simbolo-igual:hover {
+    background-color: #4b4c50; 
+}
 
-  .limpar:hover {
-      background-color: #4b4c50;
-  /*     background-color: #535C91; */
+.historico {
+    box-sizing: border-box; 
+}
 
-  }
+/* Estilos para IDs */
 
-  .simbolo-igual {
-      background-color: #bc162a;
-      border-color: #bc162a;
-      height: 80px;
-      color: #fff;
-  /*     background-color: #9290C3;
-      border-color: #000; */
-  }
+#resultado {
+    text-align: right; 
+}
 
-  .simbolo-igual:hover {
-      background-color: #4b4c50;
-  /*     background-color: #535C91; */
-  }
-
-  .tela{
-      background-color: #fff;
-      justify-content: center;
-      color: black;
-      font-size: medium;
-      height: 3em;
-      cursor: default;
-      padding: 10px 20px; 
-      padding-left: 10px;
-      margin-left: 10px;
-      margin-bottom: 30px;
-  }
-
-  .historico {
-      box-sizing: border-box;
-  }
-
-  /* Estilo ID */
-  #resultado {
-      text-align: right;
-  }
+#historico {
+    box-sizing: border-box;
+    background-color: #2b2628; 
+    border: 1px solid #2b2628; 
+    box-shadow: 10px 10px 30px 0px rgba(0,0,0,0.75); 
+    border-radius: 2px; /* Define o raio da borda */
+    width: 280px;
+    height: 430px;
+    float: left; 
+    margin-left: 20px; 
+}
