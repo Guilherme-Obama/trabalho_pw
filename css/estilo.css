@@ -1,113 +1,145 @@
-/* Estilo Tags */
-body {
-    background-color: #fff;
+  /* Estilo Tags */
+  body {
+      background-color: #fff;
+       /* FLEX */
+    align-items: center;
+    display: flex;
+    justify-content: center;
     font-family: "Roboto", sans-serif;
-}
+  }
 
-h1 {
-    text-align: center;
-}
+  html, body {
+    height: 100%;
+  }
 
-footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    text-align: center;
-/*     background-color: #D7E8B0;*/
-}
-
-/* Estilo Classes */
-.container {
-    background-color: #5E1675;
-    border: 1px solid #5E1675;
-    box-shadow: 10px 10px 30px 0px rgba(0,0,0,0.75);
-    border-radius: 25px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 550px;
-    height: 430px;
-
-}
-
-.teclas {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 15px;
-    padding: 25px;
-    margin:auto;
-    color: #fff;
-      
-}
-
-.botao {
-    height: 60px;
-    padding: 5px;
-    background-color: #9290C3;
-    border-radius: 30px;
-    border: 2px solid #9290C3;
-    font-size: 2rem;
-    color: #fff;
-}
-
-.botao:hover {
-    background-color: #535C91;
-}
+  h1 {
+      text-align: center;
+      margin-bottom: 25em;
+  }
 
 
-.operador {
-    color: #fff;
-    background-color: #9290C3;
-    font-size: 25px;
-    border-radius: 30px;
-}
+  footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      text-align: center;
+  }
 
-.operador:hover {
-    background-color: #535C91;
-}
+  /* Estilo Classes */
+  .container {
+      box-sizing: border-box;
+      background-color: #2b2628;
+      border: 1px solid #2b2628;
+      box-shadow: 10px 10px 30px 0px rgba(0,0,0,0.75);
+      border-radius: 2px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 280px;
+      height: 430px;
 
-.limpar {
-    background-color: #9290C3;
-    border-color: #9290C3;
-    color: #fff;
-    width: 80px;
-    height: 45px;  
-    margin-left: 40px;
-    margin-bottom: 10px;
-    border-radius: 30px;
-}
+  }
 
-.limpar:hover {
-    background-color: #535C91;
-}
+  .teclas {
+  >>>>>>> main
+      display: grid;
+      grid-template-columns: repeat(4, 25%);
+      grid-gap: 2px;
+      padding: 18px;
+      margin:0px;
+      color: #fff;
+      padding-bottom: 4px;
+  }
 
-.simbolo-igual {
-    background-color: #9290C3;
-    border-color: #000;
-    color: #fff;
-}
+  .botao {
+      height: 60px;
+      padding: 5px;
+      background-color: transparent;
+      border-radius: 0px;
+      border: 2px solid #000000;
+      font-size: 2rem;
+      color: #fff;
+  }
 
-.simbolo-igual:hover {
-    background-color: #535C91;
-}
+  .botao:hover {
+      background-color: #4b4c50;
+  /*     background-color: #535C91; */
+  }
 
-.tela{
-    background-color: #fff;
-    justify-content: left;
-    color: black;
-    font-size: medium;
-    height: 30%;
-    cursor: default;
-    padding: 10px; 
-    padding-left: 75px;
-    margin-left: 100px;
-    margin-bottom: 20px;
-    
-}
 
-/* Estilo ID */
-#resultado {
-    text-align: right;
-}
+  .operador {
+      color: #a70606;
+      background-color: #7e7e81;
+  /*     color: #fff;
+      background-color: #9290C3; */
+      font-size: 25px;
+      border-radius: 0px;
+  }
+
+  .operador:hover {
+      background-color: #4b4c50;
+  /*     background-color: #535C91; */
+  }
+
+  .limpar {
+      background-color: #7e7e81;
+      background-color: #7e7e81;
+      color: #ca1313;
+      width: 20em;
+      height: 40px;
+      margin-top: 4em;
+      margin-right: 5em;
+  /*     background-color: #9290C3;
+      border-color: #9290C3;
+      color: #fff;
+      width: 80px;
+      height: 45px;  
+      margin-left: 40px;
+      margin-bottom: 10px;
+      border-radius: 30px; */
+
+  }
+
+  .limpar:hover {
+      background-color: #4b4c50;
+  /*     background-color: #535C91; */
+
+  }
+
+  .simbolo-igual {
+      background-color: #bc162a;
+      border-color: #bc162a;
+      height: 80px;
+      color: #fff;
+  /*     background-color: #9290C3;
+      border-color: #000; */
+  }
+
+  .simbolo-igual:hover {
+      background-color: #4b4c50;
+  /*     background-color: #535C91; */
+  }
+
+  .tela{
+      background-color: #fff;
+      justify-content: center;
+      color: black;
+      font-size: medium;
+      height: 3em;
+      cursor: default;
+      padding: 10px 20px; 
+      padding-left: 10px;
+      margin-left: 10px;
+      margin-bottom: 30px;
+  }
+
+  .historico {
+      box-sizing: border-box;
+  }
+
+  /* Estilo ID */
+  #resultado {
+      text-align: right;
+  }

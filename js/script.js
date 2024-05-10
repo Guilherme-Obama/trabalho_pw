@@ -30,7 +30,7 @@ function display(valor){
 // Calcula a expressão inserida pelo usuário e retorna o valor para a tela
 function solucao(){
     let historicoRecuperado = recuperaHistorico();
-
+  
     let expressao = document.getElementById("resultado").value;
     try {
         let resultado = eval(expressao);
@@ -52,7 +52,6 @@ function solucao(){
     }
     
     document.getElementById("resultado").focus();
-
     return resultado;
 }
 
@@ -83,4 +82,4 @@ function salvarHistorico(resultado) {
     historico = JSON.stringify(historico);
     localStorage.setItem("historico", historico);
 
-}
+    }
