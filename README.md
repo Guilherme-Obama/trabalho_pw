@@ -18,7 +18,7 @@ A Calculadora Online permite que os usuários realizem operações matemáticas 
 
 ## Como Usar
 
-1. Abra o arquivo index.html em um navegador da web ou acesse o GitHub Pages: .
+1. Abra o arquivo index.html em um navegador da web ou acesse o GitHub Pages: https://guilherme-obama.github.io/trabalho_pw/.
 2. Utilize os botões numéricos e operadores para inserir uma expressão matemática ou digite a expressão válida na tela da calculadora.
 3. Pressione o botão "C" para limpar a tela ou utilize as teclas "c" ou "esc" do seu teclado.
 4. Pressione o botão "=" para calcular o resultado da expressão ou utiliza tecla "Enter" do seu teclado.
