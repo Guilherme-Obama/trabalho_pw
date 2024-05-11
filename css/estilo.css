@@ -112,8 +112,10 @@ footer {
 }
 
 .historico {
-    box-sizing: border-box; 
+    box-sizing: border-box;
+    color: #fff;
 }
+
 
 /* Estilos para IDs */
 
@@ -129,6 +131,23 @@ footer {
     border-radius: 2px; /* Define o raio da borda */
     width: 280px;
     height: 430px;
-    float: left; 
-    margin-left: 20px; 
+    float: right; 
+    margin-left: 5em; 
+    color: #fff;
+    
+}
+
+.historico-screen {
+    text-align: center;
+    box-sizing: border-box;
+    background-color: #2b2628; 
+    border: 1px solid #2b2628; 
+    box-shadow: 10px 10px 30px 0px rgba(0,0,0,0.75); 
+    border-radius: 2px; /* Define o raio da borda */
+    width: 280px;
+    height: 430px;
+    transform: translate(-110%, -100%);
+    color: #fff;
+    
+
 }
