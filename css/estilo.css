@@ -111,6 +111,11 @@ footer {
     background-color: #4b4c50; 
 }
 
+.historico {
+    box-sizing: border-box;
+    color: #fff;
+}
+
 
 /* Estilos para IDs */
 
