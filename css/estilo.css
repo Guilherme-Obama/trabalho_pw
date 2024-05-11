@@ -30,7 +30,7 @@ footer {
     border-radius: 2px; 
     position: absolute; 
     top: 50%;
-    left: 50%; 
+    left: 60%; 
     transform: translate(-50%, -50%); /* Move a caixa para o centro da tela */
     width: 280px; 
     height: 430px;
@@ -116,7 +116,6 @@ footer {
     color: #fff;
 }
 
-
 /* Estilos para IDs */
 
 #resultado {
@@ -128,26 +127,15 @@ footer {
     background-color: #2b2628; 
     border: 1px solid #2b2628; 
     box-shadow: 10px 10px 30px 0px rgba(0,0,0,0.75); 
-    border-radius: 2px; /* Define o raio da borda */
+    border-radius: 2px;
+    transform: translate(-110%, -100%);
+    text-align: center;
     width: 280px;
     height: 430px;
     float: right; 
     margin-left: 5em; 
     color: #fff;
-    
-}
-
-.historico-screen {
-    text-align: center;
-    box-sizing: border-box;
-    background-color: #2b2628; 
-    border: 1px solid #2b2628; 
-    box-shadow: 10px 10px 30px 0px rgba(0,0,0,0.75); 
-    border-radius: 2px; /* Define o raio da borda */
-    width: 280px;
-    height: 430px;
-    transform: translate(-110%, -100%);
-    color: #fff;
-    
-
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-right: 10px;
 }
