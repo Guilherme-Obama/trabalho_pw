@@ -146,11 +146,8 @@ footer {
     border-radius: 2px; /* Define o raio da borda */
     width: 280px;
     height: 430px;
+    transform: translate(-110%, -100%);
     color: #fff;
     
 
-}
-
-.caixa {
-    margin-left: 20em;
 }
