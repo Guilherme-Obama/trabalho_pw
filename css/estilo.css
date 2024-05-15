@@ -1,7 +1,7 @@
 /* Estilos para elementos de marcação HTML */
 
 body {
-    background-color: #fff; 
+    background-image: url(https://img.freepik.com/vetores-gratis/quadro-de-matematica_23-2148178220.jpg?w=996&t=st=1715776152~exp=1715776752~hmac=6f6ab851a1fc0ff0aa8a31d4549c463ba636dbbf4590b5b249e39a4e9d933cb0); 
     align-items: center;
     display: flex; /* Define o layout como flexível */
     justify-content: center;
@@ -10,6 +10,9 @@ body {
 
 h1 {
     text-align: center;
+    color: #fff;
+    background-color: #131314;
+    border-radius: 10px;
 }
 
 footer {
@@ -18,6 +21,8 @@ footer {
     left: 0;
     width: 100%;
     text-align: center;
+    background-color: #4b4c50;
+    color: #fff;
 }
 
 /* Estilos para classes de elementos */
@@ -25,7 +30,7 @@ footer {
 .container {
     box-sizing: border-box;
     background-color: #2b2628; 
-    border: 1px solid #2b2628; 
+    border: 1px solid #2b2628;
     box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.75); 
     border-radius: 2px; 
     position: absolute; 
