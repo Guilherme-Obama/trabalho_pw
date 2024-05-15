@@ -112,6 +112,7 @@ function displayHistorico() {
 
     // Cria o botão para limpar o histórico
     const clearButton = document.createElement("button");
+    clearButton.setAttribute("id", "limpar-historico");
     clearButton.innerText = "Limpar Histórico";
     clearButton.addEventListener("click", clearHistorico);
 

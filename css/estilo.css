@@ -139,3 +139,8 @@ footer {
     overflow-x: hidden;
     padding-right: 10px;
 }
+
+#limpar-historico {
+    background-color: #7e7e81; 
+    color: #ca1313; 
+}
